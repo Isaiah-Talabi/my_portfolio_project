@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Isaiah Talabi Ayomikun</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="leaves-container" id="leavesContainer"></div>
+    <button class="mobile-nav-toggle" id="mobileToggle">☰</button>
+    <button class="back-to-top" id="backToTop">🌿</button>
+
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">🌱 <span>Menu</span></div>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><span>🏠</span> <span>Home</span></a></li>
+                    <li><a href="about.html"><span>👤</span> <span>About</span></a></li>
+                    <li><a href="projects.html"><span>📁</span> <span>Projects</span></a></li>
+                    <li class="active"><a href="planner.html"><span>📋</span> <span>Planner</span></a></li>
+                    <li><a href="contact.html"><span>✉️</span> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                "Building products for the future, one line of code at a time."
+            </div>
+        </aside>
+
+        <main>
+            <h1 class="section-title">Academic Planner</h1>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-num" id="totalTasksCount">0</div>
+                    <div class="stat-label">📝 Total Tasks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" id="completedTasksCount">0</div>
+                    <div class="stat-label">✅ Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" id="pendingTasksCount">0</div>
+                    <div class="stat-label">⏳ Pending</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num" id="progressPercent">0%</div>
+                    <div class="stat-label">📊 Progress</div>
+                </div>
+            </section>
+
+            <div class="planner-dashboard">
+                <div class="planner-main">
+                    <section class="task-form-panel">
+                        <form class="form-inline" id="taskForm">
+                            <div class="form-group">
+                                <label for="taskName">Task Outline</label>
+                                <input type="text" id="taskName" class="form-control" placeholder="Enter academic metrics..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="taskPriority">Priority</label>
+                                <select id="taskPriority" class="form-control">
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="taskDate">Due Date</label>
+                                <input type="date" id="taskDate" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Task</button>
+                        </form>
+                    </section>
+
+                    <section>
+                        <ul class="task-list" id="taskList"></ul>
+                    </section>
+                </div>
+
+                <div class="planner-sidebar">
+                    <div class="streak-card">
+                        <h3>Study Streak Tracker</h3>
+                        <div class="streak-counter">
+                            <span class="flame-icon">🔥</span>
+                            <span id="streakCount">12</span>
+                        </div>
+                        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.9;">Days of consistent studying!</p>
+                    </div>
+
+                    <div class="info-card" style="margin-bottom: 25px;">
+                        <h3>🎯 Semester Goals</h3>
+                        <ul style="padding-left: 20px; margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
+                            <li>✅ Complete COS106 project</li>
+                            <li>Learn JavaScript fundamentals</li>
+                            <li>Build a personal project</li>
+                            <li>Read 5 tech books</li>
+                        </ul>
+                    </div>
+
+                    <div class="notepad-card">
+                        <h3>📋 Quick Notes</h3>
+                        <textarea class="notepad-textarea" id="notepad" placeholder="Jot down continuous runtime strategies..."></textarea>
+                        <button class="btn btn-primary" id="saveNoteBtn" style="width: 100%;">Save Note</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Isaiah Talabi Ayomikun | COS 106 Term Project Submission</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/planner.js"></script>
+</body>
+</html>

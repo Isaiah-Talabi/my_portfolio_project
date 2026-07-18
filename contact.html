@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Isaiah Talabi Ayomikun</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="leaves-container" id="leavesContainer"></div>
+    <button class="mobile-nav-toggle" id="mobileToggle">☰</button>
+    <button class="back-to-top" id="backToTop">🌿</button>
+    <div class="toast" id="toast"></div>
+
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">🌱 <span>Menu</span></div>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><span>🏠</span> <span>Home</span></a></li>
+                    <li><a href="about.html"><span>👤</span> <span>About</span></a></li>
+                    <li><a href="projects.html"><span>📁</span> <span>Projects</span></a></li>
+                    <li><a href="planner.html"><span>📋</span> <span>Planner</span></a></li>
+                    <li class="active"><a href="contact.html"><span>✉️</span> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                "Building products for the future, one line of code at a time."
+            </div>
+        </aside>
+
+        <main>
+            <h1 class="section-title">Get in Touch</h1>
+
+            <div class="contact-layout">
+                <div class="contact-form-panel">
+                    <h2>Send a Message</h2>
+                    <form class="vertical-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" class="form-control" placeholder="Isaiah Talabi Ayomikun" required>
+                            <div class="error-message">Name structure field is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" class="form-control" placeholder="isaiah.ayomikun@miva.edu.ng" required>
+                            <div class="error-message">Please supply a structural valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="text" id="contactPhone" class="form-control" placeholder="08012345678" required>
+                            <div class="error-message">Phone array must consist only of integers.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject (Optional)</label>
+                            <input type="text" id="contactSubject" class="form-control" placeholder="Project Collaboration">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message Node</label>
+                            <textarea id="contactMessage" class="form-control" placeholder="Share your architectural workflow ideas..." required></textarea>
+                            <div class="error-message">Message body field requires input.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Submit Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-panel">
+                    <div class="info-item-block">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>Primary Academic Mail</h4>
+                            <p><a href="mailto:isaiah.ayomikun@miva.edu.ng" style="color: var(--text-color);">isaiah.ayomikun@miva.edu.ng</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item-block">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Geographical Hub</h4>
+                            <p>Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item-block">
+                        <div class="info-icon">🌐</div>
+                        <div>
+                            <h4>Network Ecosystems</h4>
+                            <div class="social-links-grid">
+                                <a href="https://github.com/isaiahtalabi" target="_blank" class="social-icon-btn" title="GitHub">GH</a>
+                                <a href="https://twitter.com/isaiahtalabi" target="_blank" class="social-icon-btn" title="Twitter/X">TW</a>
+                                <a href="#" class="social-icon-btn" title="LinkedIn">LN</a>
+                                <a href="mailto:isaiah.ayomikun@miva.edu.ng" class="social-icon-btn" title="Email">✉️</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Isaiah Talabi Ayomikun | COS 106 Term Project Submission</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>
